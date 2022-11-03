@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from "./components/MyCounter"
+import MyGitHub from "./components/MyGitHub";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>
+        Hello React!
+      </h1>
+      <h2>
+        Connor Parrott - g86k652
+      </h2>
+
+      <Counter incBy={1} /><hr />
+      <Counter incBy={2} /><hr />
+      <MyGitHub /><hr />
     </div>
   );
 }
